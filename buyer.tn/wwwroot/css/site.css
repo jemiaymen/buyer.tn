@@ -1,0 +1,29 @@
+
+body {
+    background-color: #fafafa;
+}
+
+.body-content {
+    margin-top: 20px;
+    background-color: white;
+}
+
+.acc {
+    font-size: 12px;
+    padding-top: 8px;
+}
+
+.top {
+    margin-top: 5px;
+}
+
+.reqired {
+    margin: 0 0 3px 0;
+    color: red;
+    display: inline-block;
+}
+
+.e-list-img {
+    width: 138px ;
+    height: 90px ;
+}

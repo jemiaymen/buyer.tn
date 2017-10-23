@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - buyer.tn</title>
+
+    <environment include="Development">
+		<link rel="stylesheet" href="~/lib/syncfusion-javascript/Content/ej/web/ej.widgets.core.material.min.css" /> 
+        <link rel="stylesheet" href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" />
+		<link rel="stylesheet" href="~/lib/syncfusion-javascript/Content/ej/web/material/ej.theme.min.css" />
+			
+		<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        
+          
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+
+		
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/lib/syncfusion-javascript/Content/ej/web/material/ej.theme.min.css" />
+		<link rel="stylesheet" href="~/lib/syncfusion-javascript/Content/ej/web/material/ej.widgets.core.material.min.css" />	
+        <link rel="stylesheet" href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" />
+			
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+
+	@RenderSection("Styles", required: false)	
+</head>
+<body>
+		
+    
+	<ej-Menu id="menu">
+        <e-menu-fields dataSource="ViewBag.menusource" id="pid" text="mtext" url="url" parent-id="parent"></e-menu-fields>
+    </ej-Menu>
+
+		
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2017 - buyer.tn</p>
+        </footer>
+    </div>
+
+    <environment include="Development">
+			
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+			
+		
+		<script src="~/lib/jsrender/jsrender.min.js"></script>
+		<script src="~/lib/syncfusion-javascript/Scripts/ej/common/ej.core.min.js"></script>
+		<script src="~/lib/syncfusion-javascript/Scripts/ej/common/ej.globalize.min.js"></script>
+		<script src="~/lib/syncfusion-javascript/Scripts/ej/common/ej.draggable.min.js"></script>
+        <script src="~/lib/syncfusion-javascript/Scripts/ej/common/ej.scroller.min.js"></script>
+		<script src="~/lib/syncfusion-javascript/Scripts/ej/common/ej.data.min.js"></script>
+        <script src="~/lib/syncfusion-javascript/Scripts/ej/common/ej.touch.min.js"></script>
+		<script src="~/lib/syncfusion-javascript/Scripts/ej/common/ej.unobtrusive.min.js"></script>
+			
+			
+
+			
+			
+        <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.button.min.js"></script>
+		<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.dialog.min.js"></script>
+        <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.maskedit.min.js"></script>
+		<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.menu.min.js"></script>
+        <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.checkbox.min.js"></script>
+		<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.listview.min.js"></script>
+			
+        
+
+			
+        
+			
+		
+			
+		<script src="~/js/site.js" asp-append-version="true"></script>	
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+			
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+		<script src="~/lib/jsrender/jsrender.min.js"></script>
+        <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
+    </environment>
+
+
+	<ej-script-manager></ej-script-manager>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

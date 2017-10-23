@@ -1,0 +1,185 @@
+﻿
+        <ej-dialog id="loginForm" title="Login Form" is-responsive="true"  width="320" enable-modal="true" enable-resize="false" close="onLoginDialogClose" show-on-init="false">
+            <e-content-template>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <p class="top">Please enter your username and password</p>
+						        <hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Username <p class="reqired">*</p>
+							    <ej-mask-edit id="username" width="90%" input-mode="@InputMode.Text" change="checklogin"  />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Password <p class="reqired">*</p>
+							    <ej-mask-edit id="password" width="90%"  input-mode="@InputMode.Password" change="checklogin" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <ej-check-box id="rememberme" text="Remember me" css-class="top" />                              
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" >
+                                <ej-button enabled="false" id="loginbtn" type="@ButtonType.Button" size="@ButtonSize.Medium" click="loginclick" text="LOGIN" />                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="acc">
+                                Don't have an account ? <a href="#" class="aregister">Signup</a>
+                            </td>
+                        </tr>
+				        <tr>
+                            <td align="center" class="acc">
+                                Forget Password ? <a href="#" class="aforget">Recover</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </e-content-template>
+        </ej-dialog>
+
+
+        <ej-dialog id="changepasswordForm" title="Change Password" is-responsive="true"  width="320" enable-modal="true" enable-resize="false" close="onLoginDialogClose" show-on-init="false">
+            <e-content-template>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <p class="top">Please enter your old password and new password</p>
+                                <hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Old Password <p class="reqired">*</p>
+                                <ej-mask-edit id="oldpassword" width="90%" input-mode="@InputMode.Password" change="checkchangepassword"  />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                New Password <p class="reqired">*</p>
+                                <ej-mask-edit id="newpassword" width="90%"  input-mode="@InputMode.Password"  change="checkchangepassword" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Confirm Password <p class="reqired">*</p>
+                                <ej-mask-edit id="newpasswordc" width="90%"  input-mode="@InputMode.Password"  change="checkchangepassword" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" >
+                                <ej-button enabled="false" id="jemixbtn" type="@ButtonType.Button" size="@ButtonSize.Medium" click="changepasswordclick" text="UPDATE" />                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="acc">
+                                Don't wanna change password ? <a href="#" class="alogin">Login</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </e-content-template>
+        </ej-dialog>
+
+         <ej-dialog id="registerForm" title="Register" is-responsive="true"  width="320" enable-modal="true" enable-resize="false" close="onRegisterDialogClose" show-on-init="false">
+            <e-content-template>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <p class="top">Please enter your username and password</p>
+                                <hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                First Last Name <p class="reqired">*</p>
+                                <ej-mask-edit id="rfirstlastname" width="90%" change="checkregister"   />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Email <p class="reqired">*</p>
+                                <ej-mask-edit id="remail" width="90%"  change="checkregister"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Username <p class="reqired">*</p>
+                                <ej-mask-edit id="rusername" width="90%"  change="checkregister"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Password <p class="reqired">*</p>
+                                <ej-mask-edit id="rpassword" width="90%"  input-mode="@InputMode.Password"  change="checkregister"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Confirm Password <p class="reqired">*</p>
+                                <ej-mask-edit id="rpasswordc" width="90%"  input-mode="@InputMode.Password"  change="checkregister"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <br />
+                                <ej-button enabled="false" id="registerbtn" type="@ButtonType.Button" size="@ButtonSize.Medium" height="30" width="100" text="REGISTER" click="registerclick" />                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="acc">
+                                Have an account ? <a href="#" class="alogin">Login</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </e-content-template>
+        </ej-dialog>
+
+
+        <ej-dialog id="forgetpasswordForm" title="Forget Password" is-responsive="true"  width="320" enable-modal="true" enable-resize="false" close="onLoginDialogClose" show-on-init="false">
+            <e-content-template>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <p class="top">Please enter your username or your email</p>
+                                <hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Username or email <p class="reqired">*</p>
+                                <ej-mask-edit id="dataforgetpassword" width="90%" input-mode="@InputMode.Text" change="checkforgetpassword"  />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" >
+                                <ej-button enabled="false" id="forgetpasswordbtn" type="@ButtonType.Button" size="@ButtonSize.Medium" click="loginclick" text="SEND" />                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="acc">
+                                Have an account ? <a href="#" class="alogin">Login</a>
+                            </td>
+                        </tr>
+				        <tr>
+                            <td align="center" class="acc">
+                                Don't have an account ? <a href="#" class="aregister">Signup</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </e-content-template>
+        </ej-dialog>
+

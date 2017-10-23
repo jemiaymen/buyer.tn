@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+
+
+@{
+    ViewData["Title"] = "Dialog";
+    await Html.RenderPartialAsync("Partial/_List");
+}
+
+
+
+
+
+    <ej-button id="btnOpen" text="Click" click="onclick" />
+
+    <ej-button id="register" text="Click" click="regclick" />
+
+    <ej-button id="changepw" text="Click" click="changeclick" />
+
+    <script>
+
+        function onclick() {
+            $("#loginForm").ejDialog("open");
+        }
+
+	    function regclick(){
+	        $("#registerForm").ejDialog("open");
+	    }
+	    function changeclick(){
+            $("#changepasswordForm").ejDialog("open");
+        }
+    </script>
+
