@@ -4,7 +4,9 @@
 
 @{
     ViewData["Title"] = "Dialog";
-    await Html.RenderPartialAsync("Partial/_List");
+    await Html.RenderPartialAsync("Partial/_ListTemplate");
+
+
 }
 
 
@@ -31,3 +33,10 @@
         }
     </script>
 
+@section Styles {
+    @{await Html.RenderPartialAsync("Partial/_ListStyle");}
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("Partial/_ListScript");}
+}

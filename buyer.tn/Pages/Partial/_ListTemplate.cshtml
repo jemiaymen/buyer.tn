@@ -1,0 +1,27 @@
+﻿
+<div class="result-list">
+	<ej-list-view  id="allitems"  dataSource="ViewBag.lst" render-template="true" template-id="list-template" ></ej-list-view>
+</div>
+
+<script id="list-template" type="text/x-jsrender">
+    <div class="item">
+	    <div class="list-head">
+	        <a href="{{>url}}">
+	            <img src="{{>img}}" class="list-img" />
+	        </a>
+	    </div>
+	
+	    <div class="list-content">
+	        <div class="list-title">
+                <h4>{{>title}}</h4>
+            </div>
+	        <div class="price">
+               <h5> {{>price}} </h5>
+            </div>
+            <div class="list-date">
+                <p> {{>date}} </p>
+            </div>
+	    </div>
+    </div>
+</script>
+

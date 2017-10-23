@@ -1,0 +1,32 @@
+﻿.list-date {
+    color: #757575;
+}
+
+.result-list .e-list {
+    height: 105px !important;
+    padding: 5px;
+}
+
+.list-img {
+    margin: 0;
+    padding: 3px 3px 3px 3px;
+    border: 0 none;
+    width: auto;
+    height: auto;
+    max-width: 130px;
+    max-height: 90px;
+    float: left;
+}
+
+.list-head {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.list-title h4 {
+    color: #1e88e5;
+}
+
+.list-content {
+    margin-left: 148px;
+}
